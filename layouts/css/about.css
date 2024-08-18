@@ -1,0 +1,49 @@
+body{
+    background-color: white;
+    overflow-y  : scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+::-webkit-scrollbar-track{
+    background-color:white;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#888;  
+}
+.abouttalk{
+    margin: 30px;
+}
+.b1 ,.b2 ,.b3 ,.b4 ,.b5 ,.b6 ,.b7 ,.b8 ,.b9{
+    width: 100%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-bottom:5px ;
+    margin-bottom: 20px;
+}
+.b9{
+    margin-bottom: 150px;
+}
+.abouttalk h1{
+    padding-top: 50px;
+    margin-top: 0px;
+    color:whitesmoke;
+    text-align: center;
+}
+.abouttalk p{
+    color:rgb(35, 35, 81);
+    background-color: white;
+    padding:0px 50px 10px 50px ;
+    font-size: 25px;
+    font-style: italic;
+}
+.about1 ,.about2 ,.about3 ,.about4 ,.about5 ,.about6 ,.about7 ,.about8 ,.about9{
+    display: none;
+    width: 98%;
+    margin: auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    /* margin-bottom: 10px; */
+}
+
+

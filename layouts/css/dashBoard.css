@@ -1,0 +1,81 @@
+body{
+    background-color: #eee;
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    text-decoration: none;
+}
+hr{
+    width: 10%;
+}
+.container button{
+    width: 15%;
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    font-size: 30px;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.stat span{
+    /* display: block; */
+    font-size: 50px;
+}
+.tables{
+    display:none;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+.tables{
+    border-collapse: collapse;
+    width: 45%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+}
+.users{
+    display: none;
+}
+.faqs {
+    margin: auto auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+.faqs table{
+    /* width: 400px;
+    height: 400px; */
+}
+.xrays{
+    display: none;
+}
+table{
+    margin: auto;
+    /* margin-top: 20px; */
+}
+.xrays table td img{
+    width: 200px;
+    height: 200px;
+}
+#chartContainer{
+    /* margin: auto; */
+    width: 40%;
+    height: 40%;
+}
+
+tr:hover {background-color: #D6EEEE;}
+

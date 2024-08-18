@@ -1,0 +1,67 @@
+body {
+    background-image: url('../../img/WhatsApp\ Image\ 2024-04-23\ at\ 10.17.06\ PM\ \(1\).jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.medical-report {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+.repheader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+p{
+    color: darkslategray;
+}
+h1 {
+    margin: 0;
+    color: black;
+    font-family: 'Courier New', Courier, monospace , bold;
+}
+h2{
+    color: black;
+    font-family: 'Courier New', Courier, monospace , bold;
+}
+#special{
+    color: #007bff;
+}
+.patient-info, .diagnosis, .prescription {
+    margin-bottom: 20px;
+}
+.x-rays {
+    margin-bottom: 20px;
+}
+#xRayPreview {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.repheader button#downloadPdf {
+    background-color: #007bff; 
+    border: none;
+    padding: 5px 10px;
+    font-size: 24px;
+    color: white; 
+    cursor: pointer;
+    margin-left: 10px; 
+    border-radius: 5px; 
+}
+.repheader button#downloadPdf:hover {
+    background-color: #0056b3; 
+}
+.x-ray-image {
+    max-width: 50%; 
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 10px;
+}

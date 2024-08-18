@@ -1,0 +1,387 @@
+/* header */
+header{
+    background-color: white;
+    padding: 5px 20px 0px 10px;
+    width: 100%;
+    height:70px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 5px gray;
+
+}
+header .cc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+}
+
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    justify-content:center;
+}
+.nav-link{
+    color: #016064;
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.active{
+    background-color:#016064;
+    color: whitesmoke;
+    border: 0px;
+    border-radius: 10px;
+    margin: 0px;
+}
+#buttons ,#button{
+    width: 400px;
+    height: 50px;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: flex-end;
+        
+}
+#buttons{
+    display: flex;
+}
+#button{
+    display:none;
+}
+#button button{
+    background-color:#f44336;
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px ;
+    border-bottom-right-radius: 25px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-width:0px ;
+}
+
+header img{
+    width: 220px;
+    justify-content: flex-start;
+}
+header #buttons .signup{
+    /* border-width: 5px; */
+    background-color: #04AA6D;
+    border-top-left-radius: 25px ;
+    border-bottom-left-radius: 25px ;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-width:0px ;
+}
+header #buttons .signin{
+    text-decoration: none;
+    color: #04AA6D;
+    padding: 10px;
+    border-top-right-radius: 25px ;
+    border-bottom-right-radius: 25px;
+    padding: 10px 15px 10px 15px;
+    border-width:0px ;
+}
+header #buttons .signin:hover ,header .buttons .signup:hover {
+    cursor: pointer;
+    background-color: #198754;
+    color: white;
+}
+header #button button:hover {
+    cursor: pointer;
+    background-color: darkred
+}
+/* faq */
+header .faq{
+    display: none;
+    padding: 10px 5px 5px 5px;
+    width: 50%;
+    height: 310px;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    z-index: 1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+    /* box-shadow: 0px 5px 5px gray; */
+}
+.faq input[type=text] , .faq textarea{
+    width: 50%;
+    height: 10px;
+}
+.faq form{
+    display: flex;
+    flex-direction: column;
+}
+.ffbtns{
+    display: flex;
+    justify-content:space-around;
+    margin: 10px 0px;
+}
+.ffbtns button{
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+    background-color: #f44336;
+    width: 200px;
+    align-items: center;
+    color: white;
+    border-width: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+.faq form input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    width: 200px;
+    align-items: center;
+    justify-content: flex-end;
+    float: left;
+    border-width: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.faqr{
+    /* background-color:; */
+    background-color:white;
+    color: black;
+    border: 0px;
+    border-radius: 10px;
+    margin: 0px;
+}
+/* end */
+
+#button .logout a{
+    color: white;
+    text-decoration: none;
+}
+/* end */
+
+/* body */
+@import url('https://fonts.cdnfonts.com/css/inclusive-sans-2');
+body{
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+::-webkit-scrollbar-track{
+    background-color:white;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#888;  
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+/* end */
+
+
+/* login&register */
+.modal{
+    overflow-y: hidden;
+    overflow: hidden;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: #022a2c; 
+    padding-top: 30px;
+    font-style: italic;
+}
+.modal ::-webkit-scrollbar {
+    width: 2px;
+}
+.modal ::-webkit-scrollbar-track{
+    background-color:white;
+}
+.modal ::-webkit-scrollbar-thumb{
+    background-color:#888;  
+}
+.modal .container {
+    display: flex;
+    flex-direction: row;
+    margin: auto auto;
+}
+.modal .container #cont{
+    display: none;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    width: 400px;
+    margin: auto auto;
+}
+.modal-content{
+    background-color: #fefefe;
+    margin:auto auto; 
+    border: 0px solid #888;
+    border-radius: 25px;
+    padding: 30px;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+.close{
+    font-size: 40px;
+    float: right;
+    display: block;
+
+}
+.close:hover{
+    color:#f44336;
+    cursor: pointer;
+}
+.modal-content h1{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+}
+.modal-content label{
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+input[type=text] ,input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.modal-content .signi{
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: center;
+    border-width:0px ;
+    height: 40px;
+    margin-top: 10px;
+    background-color:#04AA6D;
+    border-radius: 25px;
+    color: white;
+}
+.modal-content .signi:hover{
+    background-color: #198754;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-content .cancel{
+    background-color: #f44336;
+    color: white;
+    width: 100%;
+    height: 40px;
+    border-width: 0px;
+    border-radius:25px;
+}
+.cancel:hover{
+    background-color: darkred;
+    cursor: pointer;
+}
+.psw a{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color:#04AA6D;
+}
+
+.psw a:hover ,.div a:hover{
+    color:#198754;
+    cursor: pointer;
+}
+.div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.div a{
+    color: #04AA6D;
+    text-decoration: none;
+}
+.or-div{
+    border: none;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+    line-height: 50px;
+}
+.or-line{
+    display: flex;
+    /* display: flex; */
+    font-size: 12px;
+    font-weight: 500;
+    height: inherit;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.or-line::before{
+    border-bottom: 1px solid #c2c8d0;
+    content: "";
+    flex: 1 0 auto;
+    height: 50%;
+    margin-right: 5px;
+    align-items: flex-end;
+}
+.or-line::after{
+    border-bottom: 1px solid #c2c8d0;
+    content: "";
+    flex: 1 0 auto;
+    height: 50%;
+    margin-right: 5px;
+}
+/* end */
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    padding: auto 0px;
+    box-shadow: 6px 0px 6px gray;
+    height: 70px;
+    width: 100%;
+    color: #016064;
+    font-size: 20px;
+    background-color:whitesmoke;
+    position: fixed;
+    bottom: 0;
+}
+footer div{
+    margin-left: 50px;
+}
+footer ul {
+    margin-right: 50px;
+}
+footer ul li{
+    margin-right: 10px;
+}
+footer ul li a i{
+    color: #016064;
+}
+footer ul li a i:hover{
+    color: darkblue;
+}
+/* end */

@@ -1,0 +1,186 @@
+body{
+    /* overflow-x: hidden; */
+    /* overflow-y: scroll; */
+    line-height: 1.5;
+    background-color: #022d36;
+}
+
+.content{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    margin: auto;
+    font-style: italic;
+    background-color: #022d36;
+}
+.left-content{
+    width: 500px;
+    margin-right: 140px;
+}
+.left-content h1{
+    font-size: 50px;
+    line-height: 50px;
+}
+.left-content p{
+    /* font-family: myFirstFont; */
+    /* src: url(sansation_light.woff); */
+    color: wheat;
+    line-height: 25px;
+    font-size: 20px;
+}
+.right-content{
+    width:500px;
+}
+.right-content img{
+    width: 500px;
+}
+.left-content button{
+    width: 140px;
+    height: 30px;
+    color: white;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 5px;
+    background-color: #016064;
+    cursor: pointer;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 100px 20px 20px 20px;
+    height: 100%;
+}
+.info form{
+    margin: auto auto;
+}
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea ,input[type=file]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/* Style the submit button */
+
+.submit{
+    width: 100px;
+    background-color:#04AA6D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+.submit ,.submit a{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.bb{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    font-size: 48px;
+    color: #ccc;
+}
+.bb i{
+    align-items: center;
+    justify-content:end;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.xray img{
+    width:600px;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* footer{
+    display: none;
+} */
+
+.alert .container{
+    font-size: 30px;
+    background-color: #ccc;
+    width: 30%;
+    height:30%;
+    margin: 18% auto 15% auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+.alert .container button{
+    background-color: #04AA6D;
+    color: white;
+    border-width: 0px;
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.alert .container span{
+    padding: 0px;
+    margin: 0px;
+}
+.alert .container p{
+    margin: 0px;
+}
+/* .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: black;
+} */
